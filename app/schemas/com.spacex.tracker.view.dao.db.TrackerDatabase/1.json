@@ -1,0 +1,374 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "8ac8628fd90ffbebdd047bcb752a4aa5",
+    "entities": [
+      {
+        "tableName": "launches",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`flight_number` INTEGER NOT NULL, `mission_name` TEXT, `mission_id` TEXT, `upcoming` INTEGER NOT NULL, `launch_year` TEXT, `launch_date_unix` INTEGER NOT NULL, `launch_date_utc` TEXT, `launch_date_local` TEXT, `is_tentative` INTEGER NOT NULL, `tentative_max_precision` TEXT, `tbd` INTEGER NOT NULL, `launch_window` INTEGER NOT NULL, `rocket` TEXT, `ships` TEXT, `telemetry` TEXT, `launch_site` TEXT, `launch_success` INTEGER, `launch_failure_details` TEXT, `links` TEXT, `details` TEXT, `static_fire_date_utc` TEXT, `static_fire_date_unix` INTEGER NOT NULL, `timeline` TEXT, PRIMARY KEY(`flight_number`))",
+        "fields": [
+          {
+            "fieldPath": "flight_number",
+            "columnName": "flight_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mission_name",
+            "columnName": "mission_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mission_id",
+            "columnName": "mission_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "upcoming",
+            "columnName": "upcoming",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "launch_year",
+            "columnName": "launch_year",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "launch_date_unix",
+            "columnName": "launch_date_unix",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "launch_date_utc",
+            "columnName": "launch_date_utc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "launch_date_local",
+            "columnName": "launch_date_local",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "is_tentative",
+            "columnName": "is_tentative",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tentative_max_precision",
+            "columnName": "tentative_max_precision",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tbd",
+            "columnName": "tbd",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "launch_window",
+            "columnName": "launch_window",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rocket",
+            "columnName": "rocket",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ships",
+            "columnName": "ships",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "telemetry",
+            "columnName": "telemetry",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "launch_site",
+            "columnName": "launch_site",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "launch_success",
+            "columnName": "launch_success",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "launch_failure_details",
+            "columnName": "launch_failure_details",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "links",
+            "columnName": "links",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "details",
+            "columnName": "details",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "static_fire_date_utc",
+            "columnName": "static_fire_date_utc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "static_fire_date_unix",
+            "columnName": "static_fire_date_unix",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timeline",
+            "columnName": "timeline",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "flight_number"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "missions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`mission_id` TEXT NOT NULL, `mission_name` TEXT, `wikipedia` TEXT, `website` TEXT, `twitter` TEXT, `description` TEXT, `manufacturers` TEXT, `payload_ids` TEXT, PRIMARY KEY(`mission_id`))",
+        "fields": [
+          {
+            "fieldPath": "mission_id",
+            "columnName": "mission_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mission_name",
+            "columnName": "mission_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wikipedia",
+            "columnName": "wikipedia",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "website",
+            "columnName": "website",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "twitter",
+            "columnName": "twitter",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "manufacturers",
+            "columnName": "manufacturers",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "payload_ids",
+            "columnName": "payload_ids",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "mission_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "rocket",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `active` INTEGER, `stages` INTEGER NOT NULL, `boosters` INTEGER NOT NULL, `cost_per_launch` INTEGER NOT NULL, `success_rate_pct` INTEGER NOT NULL, `first_flight` TEXT, `country` TEXT, `company` TEXT, `height` TEXT, `diameter` TEXT, `mass` TEXT, `payload_weights` TEXT, `first_stage` TEXT, `second_stage` TEXT, `engines` TEXT, `landing_legs` TEXT, `wikipedia` TEXT, `description` TEXT, `rocket_id` TEXT, `rocket_name` TEXT, `rocket_type` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stages",
+            "columnName": "stages",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "boosters",
+            "columnName": "boosters",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cost_per_launch",
+            "columnName": "cost_per_launch",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "success_rate_pct",
+            "columnName": "success_rate_pct",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "first_flight",
+            "columnName": "first_flight",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "country",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "company",
+            "columnName": "company",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "height",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "diameter",
+            "columnName": "diameter",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mass",
+            "columnName": "mass",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "payload_weights",
+            "columnName": "payload_weights",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "first_stage",
+            "columnName": "first_stage",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "second_stage",
+            "columnName": "second_stage",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "engines",
+            "columnName": "engines",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "landing_legs",
+            "columnName": "landing_legs",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wikipedia",
+            "columnName": "wikipedia",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rocket_id",
+            "columnName": "rocket_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rocket_name",
+            "columnName": "rocket_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rocket_type",
+            "columnName": "rocket_type",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8ac8628fd90ffbebdd047bcb752a4aa5')"
+    ]
+  }
+}

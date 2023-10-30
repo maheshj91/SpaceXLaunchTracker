@@ -1,0 +1,36 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SpaceX Launch Tracker</string>
+
+    <string name="text_mission">Mission: <xliff:g example="mission" id="mission">%s</xliff:g></string>
+    <string name="text_rocket">Rocket: <xliff:g example="rocket" id="rocket">%s</xliff:g></string>
+    <string name="text_launch_date">Date: <xliff:g example="date" id="date">%s</xliff:g></string>
+    <string name="text_status">Status: <xliff:g example="status" id="status">%s</xliff:g></string>
+
+
+    <string name="text_success">Success</string>
+    <string name="text_failure">Failed</string>
+    <string name="text_upcoming">Upcoming</string>
+
+    <string name="title_rocket_detail">Rocket Details</string>
+    <string name="text_name">Name: <xliff:g example="name" id="name">%s</xliff:g></string>
+    <string name="text_type">Type: <xliff:g example="type" id="type">%s</xliff:g></string>
+    <string name="text_desc">Description: <xliff:g example="type" id="type">%s</xliff:g></string>
+    <string name="text_description">Description:</string>
+
+    <string name="title_launch_detail">Launch Details</string>
+    <string name="text_failure_reason">Failed (<xliff:g example="reason" id="reason">%s</xliff:g>)</string>
+    <string name="text_launch_site">Site: <xliff:g example="site" id="site">%s</xliff:g></string>
+    <string name="text_launch_window">Launch Window: <xliff:g example="window" id="window">%s</xliff:g></string>
+
+    <string name="text_links">Relevant Links</string>
+    <string name="text_link"><xliff:g example="ley" id="key">%s</xliff:g>: <xliff:g example="value" id="value">%s</xliff:g></string>
+
+    <string name="text_campaign">Reddit Campaign: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_launch">Reddit Launch: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_recovery">Reddit Recovery: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_media">Reddit Media: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_press_kit">Press Kit: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_article">Article: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_wikipedia">Wikipedia: <xliff:g example="value" id="value">%s</xliff:g></string>
+    <string name="text_youtube">Youtube: <xliff:g example="value" id="value">%s</xliff:g></string>
+</resources>
